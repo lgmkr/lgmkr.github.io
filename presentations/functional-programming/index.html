@@ -73,12 +73,12 @@
 </div></div></section></section><section data-id="94fa81f3655d1fd23afa97fe743ba352" data-background-color="#222222"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 70px; height: auto;" data-block-id="28451af6d6834eff50371de1932da964"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
 <h2>Concepts</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="width: 886px; left: 37px; top: 174px; height: auto;" data-block-id="b9a095ef80eee12efc9f2869a26e3afa"><div class="sl-block-style" style="z-index: 11; transform: rotate(360deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; letter-spacing: 0.03em; line-height: 1.469; color: rgb(255, 255, 255); font-size: 109%;" data-has-letter-spacing="" data-has-line-height="">
+<div class="sl-block" data-block-type="text" style="width: 886px; left: 39px; top: 176px; height: auto;" data-block-id="b9a095ef80eee12efc9f2869a26e3afa"><div class="sl-block-style" style="z-index: 11; transform: rotate(360deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; letter-spacing: 0.03em; line-height: 1.469; color: rgb(255, 255, 255); font-size: 109%;" data-has-letter-spacing="" data-has-line-height="">
 <ul>
 	<li>Pure Functions</li>
-	<li>First-class/Higher Order Functions </li>
-	<li>Closure</li>
+	<li>First-class/Higher Order Functions</li>
 	<li>Function Composition</li>
+	<li>Closure</li>
 	<li>Currying and Partial Application</li>
 	<li>Recursive Functions</li>
 	<li>Data Immutability</li>
@@ -208,7 +208,7 @@ const myNewGenFunc = someParam =&gt; someParam;</code></pre></div></div>
 <div class="sl-block" data-block-type="text" data-block-id="75c9fec2e1daceaf7d4412177d90767e" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 502px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255);">
 <p>reduce</p>
 </div></div>
-<div class="sl-block" data-block-type="code" data-block-id="5d6f6297159b3b10564918dd5c6f97a1" style="min-width: 30px; min-height: 30px; width: 587px; height: 86px; left: 187px; top: 167px;"><div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 15; font-size: 125%;"><pre class="javascript"><code>const arr = [1, 2, 3];
+<div class="sl-block" data-block-type="code" data-block-id="5d6f6297159b3b10564918dd5c6f97a1" style="min-width: 30px; min-height: 30px; width: 587px; height: 86px; left: 188px; top: 167px;"><div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 15; font-size: 125%;"><pre class="javascript"><code>const arr = [1, 2, 3];
 const square = x =&gt; x * x;
 const squared = arr.map(square); //=&gt;[1, 4, 9]
 </code></pre></div></div>
@@ -216,7 +216,89 @@ const squared = arr.map(square); //=&gt;[1, 4, 9]
 const isEven = num =&gt; num % 2 === 0;
 const result = arr.filter(isEven); //=&gt; [2, 4]</code></pre></div></div>
 <div class="sl-block" data-block-type="code" data-block-id="474e6f57aef98f77c3168e0358ac1469" style="min-width: 30px; min-height: 30px; width: 837px; height: 58px; left: 80px; top: 572px;"><div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 17; font-size: 125%;"><pre class="javascript"><code>const numbers = [1, 2, 5];
-const sum = numbers.reduce((prev, curr) =&gt; prev + curr, 0); //=&gt; 8</code></pre></div></div></section></section><section data-id="42a7aa64fb3a65d08e182b86bd48965c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="8c02b0e46cf0c692ec6f169e61bf20fc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+const sum = numbers.reduce((prev, curr) =&gt; prev + curr, 0); //=&gt; 8</code></pre></div></div></section></section><section data-background-color="#222222" data-id="e1f7501ffcc61face11b7703d1f818f5"><div class="sl-block" data-block-type="text" style="width: 806px; left: 65px; top: 31px; height: auto;" data-block-id="d2d5a3e7f6030b9983cefba9193d9fd1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(255, 255, 255);">
+<p><span style="font-size:1.0em">Function Composition</span></p>
+</div></div>
+
+
+
+
+
+</section><section class="stack" data-id="95a1c90b3479f9ab99336d738abb878b"><section data-background-color="#222222" data-id="f80c5ce7c5ef610843a2710f70f6d904"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 24px; height: auto;" data-block-id="9709fdf980b9f6d5033423434314d0e6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
+<p><span style="font-size:36px">Scope</span></p>
+</div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-block-id="5243e67f297ef6313257a2a96b84dab0" style="height: auto; min-width: 30px; min-height: 30px; width: 673px; left: 144px; top: 569px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255); text-align: center; font-size: 87%;">
+<p>A language implements<strong> static scope</strong>, if only by looking at the source code one can determine in which environment a binding is resolved.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="89791d14a8194e13f1b1538ce7efc924" style="height: auto; min-width: 30px; min-height: 30px; width: 905px; left: 15px; top: 86px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255); font-size: 87%;">
+<p>Is the accessibility of variables, functions, and objects in some particular part of your code during runtime.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 443px; height: 292px; left: 259px; top: 225px;" data-block-id="565871c85a3388376705c2c9755c2b32"><div class="sl-block-style" style="z-index: 16;"><div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 16; font-size: 150%;"><pre class="javascript"><code>function sum() {
+    var a = 1; 
+    var b = 2;
+    function logSum() { 
+        console.log(a+b); 
+    }
+    logSum();    
+}
+sum(); // 3</code></pre></div></div></div></section><section data-background-color="#222222" data-id="476d1069c5b6a842e626ca543190c565">
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 413px; height: 379px; left: 274px; top: 210px;" data-block-id="01ad03edcc0ebd83a91b3d2ae45d0a14"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 11; font-size: 150%;"><pre class="javascript"><code>let x = 1;
+ 
+function foo() {
+  console.log(x);
+}
+ 
+function bar(fn) {
+  let x = 2;
+  fn(); 
+}
+ 
+bar(foo); // 1, not 2!</code></pre></div></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="37ec14c6f515dae353e664ef9be2730a" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 160px; top: 101px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);">
+<p><span style="color:rgb(255, 255, 255); font-size:26.1px">And that is the scope of the </span><strong>creation time</strong></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="88a1db9b490227c7583e7a7c3e1c03ee" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 160px; top: 24px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255);">
+<p>Scope (continue)</p>
+</div></div></section><section data-background-color="#222222" data-id="fb30e7ab4c3570dafdd9d9a0f0e521ae"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 24px; height: auto;" data-block-id="20953141db054ec4092fe4e3a735441d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
+<p><span style="font-size:36px">Closure</span></p>
+</div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 435px; height: 420px; left: 263px; top: 92px;" data-block-id="4ac70ef9ddf972c70a79c5ce2b89f04a"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 11; font-size: 120%;"><pre class="javascript"><code>//es5
+function foo(a, b) {
+  return function () {
+    return a + b;
+  }
+} 
+
+var sum = foo(4,5);
+sum();  //=&gt; 9
+sum();  //=&gt; 9
+
+
+
+//es6
+const foo = (a, b) =&gt; () =&gt; a + b;
+const sum = foo(4, 5);
+sum(); //=&gt; 9
+sum(); //=&gt; 9 
+ </code></pre></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 840px; left: 80px; top: 560px;" data-block-id="0800fcbac9aac1d33e45b1208d14bf48"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);">
+<p>A <strong>closure</strong> is the combination of a function and the lexical environment within which that function was declared.</p>
+</div></div></section></section><section data-id="42a7aa64fb3a65d08e182b86bd48965c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="8c02b0e46cf0c692ec6f169e61bf20fc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
 <h1>Pros and Cons</h1>
 </div></div></section>
 			</div>
@@ -224,7 +306,7 @@ const sum = numbers.reduce((prev, curr) =&gt; prev + curr, 0); //=&gt; 8</code><
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":2940,"username":"stancox","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/ae7d2883a68022fc7b8875ae8d41f78d?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":664537,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":"wide","phone_number":null,"phone_country_code":null},"email":"gstancox@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":415538,"storage_limit":262144000},"deck":{"id":1151622,"slug":"deck","title":"deck","description":"","width":960,"height":700,"visibility":"all","published_at":"2018-01-10T15:54:27.909Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/3bc165cd95213088fb1f1cd683131d08/thumb.jpg?1515613996","view_count":0,"user":{"id":2940,"username":"stancox","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/ae7d2883a68022fc7b8875ae8d41f78d?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":664537,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":19,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1516061350492,"font_typekit":null,"font_google":null,"notes":{"b49f5e4f0c3ce38fef6608e06aa90e2c":"svfsfg","b8083d6d9315cdc829dafca0232e2318":"In functional programming languages, there are no loops. When you need to do an operation like traversing a list or a tree, there are two predominant styles: recursion and higher order functions.\nRecursion relies on a function calling itself, usually on a different part of the parameter (list being traversed for example). That’s a topic for another post.\nHigher order functions are usually provided by the language. In ES6 JavaScript these functions are defined on the Array prototype."}}};
+	var SLConfig = {"current_user":{"id":2940,"username":"stancox","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/ae7d2883a68022fc7b8875ae8d41f78d?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":664537,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":"wide","phone_number":null,"phone_country_code":null},"email":"gstancox@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":415538,"storage_limit":262144000},"deck":{"id":1151622,"slug":"deck","title":"deck","description":"","width":960,"height":700,"visibility":"all","published_at":"2018-01-10T15:54:27.909Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/3bc165cd95213088fb1f1cd683131d08/thumb.jpg?1515613996","view_count":0,"user":{"id":2940,"username":"stancox","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/ae7d2883a68022fc7b8875ae8d41f78d?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":664537,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":24,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1516658422208,"font_typekit":null,"font_google":null,"notes":{"b49f5e4f0c3ce38fef6608e06aa90e2c":"svfsfg","b8083d6d9315cdc829dafca0232e2318":"In functional programming languages, there are no loops. When you need to do an operation like traversing a list or a tree, there are two predominant styles: recursion and higher order functions.\nRecursion relies on a function calling itself, usually on a different part of the parameter (list being traversed for example). That’s a topic for another post.\nHigher order functions are usually provided by the language. In ES6 JavaScript these functions are defined on the Array prototype."}}};
 </script>
 
 		<script>
