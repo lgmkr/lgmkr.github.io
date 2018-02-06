@@ -1,2 +1,2 @@
 ### Presentations:
-[Functional Programming intro (in progress)](https://lgmkr.github.io/presentations/functional-programming/)
+[Functional Programming intro (complete)](https://lgmkr.github.io/presentations/functional-programming/)
